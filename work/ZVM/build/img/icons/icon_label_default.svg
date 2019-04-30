@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 68" style="enable-background:new 0 0 64 68;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#ytbca);}
+	.st1{opacity:0.35;fill:#FFFFFF;}
+	.st2{display:none;filter:url(#ytbcc);}
+	.st3{display:inline;}
+	.st4{opacity:0.6;}
+	.st5{fill:#FFFFFF;}
+	
+		.st6{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:50;}
+	.st7{clip-path:url(#SVGID_4_);fill:none;stroke:#00B05C;stroke-width:6;stroke-miterlimit:50;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="94.9" id="ytbcc" width="89.5" x="-13" y="-14">
+	<feOffset  dx=".5" dy=".9" in="SourceGraphic" result="FeOffset1091Out"></feOffset>
+	<feGaussianBlur  in="FeOffset1091Out" result="FeGaussianBlur1092Out" stdDeviation="7.2 7.2"></feGaussianBlur>
+</filter>
+<filter  filterUnits="userSpaceOnUse" height="72" id="ytbca" width="67" x="-2" y="-3">
+	<feOffset  in="SourceGraphic" result="FeOffset1074Out"></feOffset>
+	<feGaussianBlur  in="FeOffset1074Out" result="FeGaussianBlur1075Out" stdDeviation="2.8 2.8"></feGaussianBlur>
+</filter>
+<g>
+	<g>
+		<g class="st0">
+			<g>
+				<polygon class="st1" points="32.6,60.5 9.5,47.3 9.5,20.7 32.6,7.5 55.8,20.7 55.8,47.3 				"/>
+			</g>
+		</g>
+		<g class="st0">
+			<g>
+				<polygon class="st1" points="32.6,60.5 9.5,47.3 9.5,20.7 32.6,7.5 55.8,20.7 55.8,47.3 				"/>
+			</g>
+		</g>
+		<g class="st2">
+			<g class="st3">
+				<polygon class="st4" points="31.4,56.3 12.4,45.2 12.4,23.2 31.4,12.2 50.4,23.2 50.4,45.2 				"/>
+			</g>
+		</g>
+		<path class="st5" d="M32.6,60.5L9.5,47.3V20.7L32.6,7.5l23.2,13.3v26.5L32.6,60.5z"/>
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M8,61.9V6.1h49.2v55.9H8z M55.8,47.3V20.7L32.6,7.5L9.5,20.7v26.5l23.2,13.3L55.8,47.3z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st6" d="M32.6,60.5L32.6,60.5L9.5,47.3l0,0V20.7l0,0L32.6,7.5l0,0l23.2,13.3v26.5L32.6,60.5z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_3_" points="32.6,60.5 9.5,47.3 9.5,20.7 32.6,7.5 55.8,20.7 55.8,47.3 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st7" d="M32.6,60.5L32.6,60.5L9.5,47.3l0,0V20.7l0,0L32.6,7.5l0,0l23.2,13.3v26.5L32.6,60.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
