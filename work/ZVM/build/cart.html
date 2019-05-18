@@ -14,25 +14,25 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-  <div class="main">
+  <div style="background-image: url(/img/background/bg_cart.png); background-position-y: 515px" class="main">
     <header class="header">
       <div class="header__top">
         <div class="header__list"><a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
           <nav class="nav-top">
             <ul class="nav-top__list">
-              <select name="lang" class="header__lang header__lang_mobile">
-                <option value="Ru">RU</option>
-                <option value="En">EN</option>
-              </select>
+              <div class="lang lang_mobile">
+                <div class="lang__item lang__item_ru open">RU</div>
+                <div class="lang__item lang__item_en">EN</div>
+              </div>
               <li class="nav-top__item"><a href="#" onclick="return false" class="nav-top__link">СнегобоЛотоходы</a>
-                <ul class="dropdown">
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">СИВЕР</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УНЖА</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">ВЕЯ</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УХТЫШ</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">ТП С РВД</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА2</a></li>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">СИВЕР</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УНЖА</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">ВЕЯ</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УХТЫШ</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">ТП С РВД</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА2</a></li>
                 </ul>
               </li>
               <li class="nav-top__item"><a href="#" onclick="return false" class="nav-top__link">О Компании</a>
@@ -45,10 +45,10 @@
               </li>
             </ul>
           </nav><a href="tel: 8 800 550 11 51" class="header__phone">8 800 550 11 51</a>
-          <select name="lang" class="header__lang">
-            <option value="Ru">RU</option>
-            <option value="En">EN</option>
-          </select>
+          <div class="lang">
+            <div class="lang__item lang__item_ru open">RU</div>
+            <div class="lang__item lang__item_en">EN</div>
+          </div>
           <button class="m-menu js-open-menu"></button>
         </div>
       </div>
@@ -224,245 +224,227 @@
         <div class="constructor">
           <div class="constructor__top">
             <h2>Комплектации и цены</h2>
-            <div class="constructor__links">
-              <button class="btn-ancor btn-ancor_tech">технические характеристики</button>
-              <button class="btn-ancor btn-ancor_gallery">галерея</button>
-            </div>
+            <div class="constructor__links"><a href="#tech" class="btn-ancor btn-ancor_tech js-btn-anchor">технические характеристики</a><a href="#gallery" class="btn-ancor btn-ancor_gallery js-btn-anchor">галерея</a><a href="#" class="btn-donwload"><img src="img/icons/icon_pdf.png" alt=""></a></div>
           </div>
           <div class="constructor__middle">
             <div class="constructor__content">
-              <div class="constructor__row">
-                <div class="constructor__title"><span class="constructor__numb">1</span>Выбор модели</div>
-                <div class="box box_img"><img src="img/constructor/img1.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">ЗВМ-2411</p>
-                    <p class="box__text">Пассажирский салон на 5-7 мест</p>
+              <button class="btn-constructor js-open-constructor">Открыть конфигуратор</button>
+              <div class="constructor__block">
+                <div class="constructor__row">
+                  <div class="constructor__title"><span class="constructor__numb">1</span>Выбор модификации</div>
+                  <div class="box box_img js-modif">
+                    <div class="box__pic"><img src="img/constructor/img5.png" alt="" class="box__img"></div>
+                    <div class="box__info box__info_gray">
+                      <p class="box__title">ЗВМ-2412Г</p>
+                      <p class="box__text">Двухместная кабина с грузовой платформой</p>
+                    </div>
+                  </div>
+                  <div class="box box_img js-modif">
+                    <div class="box__pic"><img src="img/constructor/img6.png" alt="" class="box__img"></div>
+                    <div class="box__info box__info_gray">
+                      <p class="box__title">ЗВМ-2412ГП</p>
+                      <p class="box__text">Четырехместная кабина с грузовой платформой</p>
+                    </div>
                   </div>
                 </div>
-                <div class="box box_img"><img src="img/constructor/img2.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">ЗВМ-2412</p>
-                    <p class="box__text">Четырехместная кабина с грузовой платформой</p>
+                <div class="constructor__row">
+                  <div class="constructor__title"><span class="constructor__numb">2</span>Выбор двигателя</div>
+                  <div class="box box_text js-motor">
+                    <div class="box__info">
+                      <p class="box__title">Бензиновый ЗМЗ-409.10</p>
+                      <p class="box__text">142,8 л.с.</p>
+                      <p class="box__desc">Звенчатая из цельноштампованных металлических траков с открытым последовательным шарниром.</p>
+                    </div>
+                  </div>
+                  <div class="box box_text js-motor">
+                    <div class="box__info">
+                      <p class="box__title">Дизельный ЗМЗ-51432.10</p>
+                      <p class="box__text">113,5 л.с.</p>
+                      <p class="box__desc">Асфальтоходная резиноармированная с параллельным резино-металлическим шарниром (РМШ)металлических траков с открытым последовательным шарниром.</p>
+                    </div>
+                  </div>
+                  <div class="box box_text js-motor">
+                    <div class="box__info">
+                      <p class="box__title">Дизельный CUMMINS ISF2.8</p>
+                      <p class="box__text">120 л.с.</p>
+                      <p class="box__desc">Звенчатая из цельноштампованных металлических траков с резино-металлическим шарниром (РМШ)металлических траков с открытым последовательным шарниром.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="box box_img"><img src="img/constructor/img3.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">ЗВМ-24111</p>
-                    <p class="box__text">Пассажирский салон на 5-7 мест</p>
+                <div class="constructor__row">
+                  <div class="constructor__title"><span class="constructor__numb">3</span>Выбор типа гусениц</div>
+                  <div class="box box_img box_big js-type"><img src="../img/constructor/img7.jpg" alt="" class="box__img">
+                    <div class="box__info">
+                      <p class="box__title">Звенчатая с открытым шарниром</p>
+                      <p class="box__desc">Звенчатая из цельноштампованных металлических траков с открытым последовательным шарниром.</p>
+                      <ol class="box__list">
+                        <li><b>Ширина - 390.00 мм</b></li>
+                        <li><b>Шаг - 128.00 мм</b></li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="box box_img box_big js-type"><img src="../img/constructor/img8.jpg" alt="" class="box__img">
+                    <div class="box__info">
+                      <p class="box__title">Асфальтоходная с  РМШ</p>
+                      <p class="box__desc">Асфальтоходная резиноармированная с параллельным резино-металлическим шарниром (РМШ)</p>
+                      <ol class="box__list">
+                        <li><b>Ширина - 400.00 мм</b></li>
+                        <li><b>Шаг - 115.00 мм</b></li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="box box_img box_big js-type"><img src="../img/constructor/img9.jpg" alt="" class="box__img">
+                    <div class="box__info">
+                      <p class="box__title">Звенчатая с РМШ</p>
+                      <p class="box__desc">1Звенчатая из цельноштампованных металлических траков с резино-металлическим шарниром (РМШ)</p>
+                    </div>
                   </div>
                 </div>
-                <div class="box box_img"><img src="img/constructor/img4.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">ЗВМ-24111</p>
-                    <p class="box__text">Четырехместная кабина с грузовой платформой</p>
-                  </div>
+                <div class="constructor__last">
+                  <div class="constructor__sum">
+                    <div class="constructor__sum-title">Рекомендованная цена</div>
+                    <div class="constructor__total js-price-total"><span class="js-price">2 955 000 </span>₽</div>
+                  </div><img src="img/icons/icon_chek_big.svg" alt="" class="constructor__complete js-complete">
                 </div>
-              </div>
-              <div class="constructor__row">
-                <div class="constructor__title"><span class="constructor__numb">2</span>Выбор модификации</div>
-                <div class="box box_img">
-                  <div class="box__pic"><img src="img/constructor/img5.png" alt="" class="box__img"></div>
-                  <div class="box__info box__info_gray">
-                    <p class="box__title">ЗВМ-2412Г</p>
-                    <p class="box__text">Двухместная кабина с грузовой платформой</p>
+                <div class="result-block result-block_mobile">
+                  <div class="result-block__title">Конфигурация вездехода</div>
+                  <div class="result-block__item">
+                    <p class="result-block__sign">Модификация:</p>
+                    <p class="result-block__info js-modif-result"></p>
                   </div>
-                </div>
-                <div class="box box_img">
-                  <div class="box__pic"><img src="img/constructor/img6.png" alt="" class="box__img"></div>
-                  <div class="box__info box__info_gray">
-                    <p class="box__title">ЗВМ-2412ГП</p>
-                    <p class="box__text">Четырехместная кабина с грузовой платформой</p>
+                  <div class="result-block__item">
+                    <p class="result-block__sign">Двигатель:</p>
+                    <p class="result-block__info js-motor-result"></p>
                   </div>
-                </div>
-              </div>
-              <div class="constructor__row">
-                <div class="constructor__title"><span class="constructor__numb">3</span>Выбор двигателя</div>
-                <div class="box box_text">
-                  <div class="box__info">
-                    <p class="box__title">Бензиновый ЗМЗ-409.10</p>
-                    <ol class="box__list">
-                      <li>142,8 л.с.</li>
-                      <li>Звенчатая из цельноштампованных металлических траков с открытым последовательным шарниром.</li>
-                      <li>Звенчатая из цельноштампованных металлических траков с открытым последовательным шарниром.</li>
-                    </ol>
+                  <div class="result-block__item">
+                    <p class="result-block__sign">Тип гусениц:</p>
+                    <p class="result-block__info js-type-result"></p>
                   </div>
-                </div>
-                <div class="box box_text">
-                  <div class="box__info">
-                    <p class="box__title">Дизельный ЗМЗ-51432.10</p>
-                    <ol class="box__list">
-                      <li>113,5 л.с.</li>
-                      <li>Асфальтоходная резиноармированная с параллельным резино-металлическим шарниром (РМШ)металлических траков с открытым последовательным шарниром.</li>
-                    </ol>
-                  </div>
-                </div>
-                <div class="box box_text">
-                  <div class="box__info">
-                    <p class="box__title">Дизельный CUMMINS ISF2.8</p>
-                    <ol class="box__list">
-                      <li>120 л.с.</li>
-                      <li>Звенчатая из цельноштампованных металлических траков с резино-металлическим шарниром (РМШ)металлических траков с открытым последовательным шарниром.</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="constructor__row">
-                <div class="constructor__title"><span class="constructor__numb">4</span>Выбор типа гусениц</div>
-                <div class="box box_img box_big"><img src="../img/constructor/img7.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">Звенчатая с открытым шарниром</p>
-                    <ol class="box__list">
-                      <li>Звенчатая из цельноштампованных металлических траков с открытым последовательным шарниром.</li>
-                      <li><b>Ширина - 390.00 мм</b></li>
-                      <li><b>Шаг - 128.00 мм</b></li>
-                    </ol>
-                  </div>
-                </div>
-                <div class="box box_img box_big"><img src="../img/constructor/img8.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">Асфальтоходная с  РМШ</p>
-                    <ol class="box__list">
-                      <li>Асфальтоходная резиноармированная с параллельным резино-металлическим шарниром (РМШ)</li>
-                      <li><b>Ширина - 400.00 мм</b></li>
-                      <li><b>Шаг - 115.00 мм</b></li>
-                    </ol>
-                  </div>
-                </div>
-                <div class="box box_img box_big"><img src="../img/constructor/img9.jpg" alt="" class="box__img">
-                  <div class="box__info">
-                    <p class="box__title">Звенчатая с РМШ</p>
-                    <ol class="box__list">
-                      <li>1Звенчатая из цельноштампованных металлических траков с резино-металлическим шарниром (РМШ)</li>
-                    </ol>
+                  <p class="result-block__price"><span class="js-price"></span>₽</p>
+                  <div class="result-block__control">
+                    <button class="btn result-block__btn js-open-popup disabled">запросить предложение</button>
                   </div>
                 </div>
               </div>
-              <div class="constructor__last">
-                <div class="constructor__sum">
-                  <div class="constructor__sum-title">Рекомендованная цена</div>
-                  <div class="constructor__total"><span>2 955 000 </span>₽</div>
-                </div><img src="img/icons/icon_chek_big.svg" alt="" class="constructor__check">
+              <h2 id="tech">Технические характеристики</h2>
+              <div class="characteristics">
+                <table class="characteristics__table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <p>Модификация</p>
+                      </th>
+                      <th>
+                        <p>ЗВМ<br>24111Г</p>
+                      </th>
+                      <th>
+                        <p>ЗВМ<br>24111П</p>
+                      </th>
+                      <th>
+                        <p>ЗВМ<br>24111ГП</p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th colspan="4">Общие технические характеристики</th>
+                    </tr>
+                    <tr>
+                      <td>Максимально-допустимая масса/грузоподъемность, кг</td>
+                      <td>3200/550</td>
+                      <td>3200/400</td>
+                      <td>3400/400</td>
+                    </tr>
+                    <tr>
+                      <td>Количество мест (с водителем)</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Среднее давление на грунт с полной нагрузкой, кПа</td>
+                      <td></td>
+                      <td>20,0</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Максимальная скорость, км/ч</td>
+                      <td></td>
+                      <td>50</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Скорость движения на плаву, км/ч</td>
+                      <td> </td>
+                      <td>4-5</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Емкость бензобаков, л</td>
+                      <td> </td>
+                      <td>70 (2х35)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>База, колея, клиренс, мм</td>
+                      <td> </td>
+                      <td>2000/1655/400</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th colspan="4">Габариты</th>
+                    </tr>
+                    <tr>
+                      <td>Длина / ширина / высота, мм</td>
+                      <td> </td>
+                      <td>4435 / 2100 / 2305</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th colspan="4">Двигатель</th>
+                    </tr>
+                    <tr>
+                      <td>Бензиновый: ЗМЗ-40911.10</td>
+                      <td></td>
+                      <td>112,2 л.с.</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Дизельный: ЗМЗ-51432.10</td>
+                      <td></td>
+                      <td>113,5 л.с.</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Дизельный: Cummins ISF2.8</td>
+                      <td></td>
+                      <td>120 л.с.</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <h2>Технические характеристики</h2>
-              <table class="characteristics">
-                <thead>
-                  <tr>
-                    <th>
-                      <p>Модификация</p>
-                    </th>
-                    <th>
-                      <p>ЗВМ-24111Г</p>
-                    </th>
-                    <th>
-                      <p>ЗВМ-24111П</p>
-                    </th>
-                    <th>
-                      <p>ЗВМ-24111ГП</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th colspan="4">Общие технические характеристики</th>
-                  </tr>
-                  <tr>
-                    <td>Максимально-допустимая масса/грузоподъемность, кг</td>
-                    <td>3200/550</td>
-                    <td>3200/400</td>
-                    <td>3400/400</td>
-                  </tr>
-                  <tr>
-                    <td>Количество мест (с водителем)</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>Среднее давление на грунт с полной нагрузкой, кПа</td>
-                    <td></td>
-                    <td>20,0</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Максимальная скорость, км/ч</td>
-                    <td></td>
-                    <td>50</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Скорость движения на плаву, км/ч</td>
-                    <td> </td>
-                    <td>4-5</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Емкость бензобаков, л</td>
-                    <td> </td>
-                    <td>70 (2х35)</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>База, колея, клиренс, мм</td>
-                    <td> </td>
-                    <td>2000/1655/400</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th colspan="4">Габариты</th>
-                  </tr>
-                  <tr>
-                    <td>Длина / ширина / высота, мм</td>
-                    <td> </td>
-                    <td>4435 / 2100 / 2305</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th colspan="4">Двигатель</th>
-                  </tr>
-                  <tr>
-                    <td>Бензиновый: ЗМЗ-40911.10</td>
-                    <td></td>
-                    <td>112,2 л.с.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Дизельный: ЗМЗ-51432.10</td>
-                    <td></td>
-                    <td>113,5 л.с.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Дизельный: Cummins ISF2.8</td>
-                    <td></td>
-                    <td>120 л.с.</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h2>Фото и видео</h2>
+              <h2 id="gallery">Фото и видео</h2>
               <div class="pictures"><a href="img/photo/img1.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img1.png" alt=""></a><a href="img/photo/img2.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img2.png" alt=""></a><a href="img/photo/img3.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img3.png" alt=""></a><a href="img/photo/img4.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img4.png" alt=""></a><a href="img/photo/img5.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img5.png" alt=""></a><a href="img/photo/img6.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img6.png" alt=""></a><a href="img/photo/img7.png" data-fancybox="ЗВМ-3401" class="picture picture_col4"><img src="img/photo/img7.png" alt=""></a></div>
             </div>
             <div class="constructor__result result-block js-sticky">
+              <div class="result-block result-block_mobile"></div>
               <div class="result-block__title">Конфигурация вездехода</div>
               <div class="result-block__item">
-                <p class="result-block__name">ЗВМ-2412</p>
-                <p class="result-block__desc">Четырехместная кабина с грузовой платформой</p>
-              </div>
-              <div class="result-block__item">
                 <p class="result-block__sign">Модификация:</p>
-                <p class="result-block__info">ЗВМ-2412ГП: Четырехместная кабина с грузовой платформой</p>
+                <p class="result-block__info js-modif-result"></p>
               </div>
               <div class="result-block__item">
                 <p class="result-block__sign">Двигатель:</p>
-                <p class="result-block__info">Дизельный  ЗМЗ-51432.10: 113,5 л.с.</p>
+                <p class="result-block__info js-motor-result"></p>
               </div>
               <div class="result-block__item">
                 <p class="result-block__sign">Тип гусениц:</p>
-                <p class="result-block__info">Асфальтоходная резиноармированная с параллельным резино-металлическим шарниром (РМШ)</p>
+                <p class="result-block__info js-type-result"></p>
               </div>
-              <p class="result-block__price">2 955 000 ₽</p>
-              <div class="result-block__control"><a href="#" onclick="return false" class="result-block__pdf"></a>
-                <button class="btn result-block__btn">запросить предложение</button>
+              <p class="result-block__price"><span class="js-price"></span>₽</p>
+              <div class="result-block__control">
+                <button data-modal="callback" class="btn result-block__btn js-open-modal disabled">запросить предложение</button>
               </div>
             </div>
           </div>
@@ -486,6 +468,47 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal">
+    <div class="modal__inner">
+      <form action="" id="callback" class="modal__form">
+        <div class="modal__close"><img src="img/icons/icon_close_modal.png" alt=""></div>
+        <div class="modal__title">Форма обратной связи</div>
+        <div class="modal__group">
+          <p class="modal__caption">Контактное лицо, ФИО<sup>*</sup></p>
+          <input type="text" name="name" placeholder="Михаилов Михаил Михайлович" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Контактный телефон<sup>*</sup></p>
+          <input type="tel" name="phone" placeholder="+7 (___) ___-____" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Наименование организации<sup>*</sup></p>
+          <input type="text" name="org" placeholder="" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">E-mail<sup>*</sup></p>
+          <input type="email" name="email" placeholder="asdqwe@mail.ru" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Сообщение</p>
+          <textarea name="message" rows="5" class="modal__field"></textarea>
+        </div>
+        <div class="modal__group">
+          <label class="modal__required">
+            <input type="checkbox"><span>Я ознакомлен с<a href="">политикой конфиденциальности</a>и даю согласие на обработку персональных данных</span>
+          </label>
+          <p class="modal__required"><sup>*</sup><span>– обязательно для заполнения</span></p>
+        </div>
+        <div class="modal__control">
+          <button class="btn modal__btn">запросить предложение</button>
+        </div>
+      </form>
+      <div class="thanks">
+        <div class="thanks__close"><img src="img/icons/icon_close_modal.png" alt=""></div>
+        <div class="thanks__title">Ваш запрос успешно отправлен!</div>
+      </div>
+    </div>
   </div>
   <script type="application/javascript" src="/libs/jQuery/jquery-3.3.1.js"></script>
   <script type="application/javascript" src="/libs/jQuery-migrate/ jquery-migrate-3.0.0.js"></script>

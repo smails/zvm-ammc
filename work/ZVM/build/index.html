@@ -20,19 +20,19 @@
         <div class="header__list"><a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
           <nav class="nav-top">
             <ul class="nav-top__list">
-              <select name="lang" class="header__lang header__lang_mobile">
-                <option value="Ru">RU</option>
-                <option value="En">EN</option>
-              </select>
+              <div class="lang lang_mobile">
+                <div class="lang__item lang__item_ru open">RU</div>
+                <div class="lang__item lang__item_en">EN</div>
+              </div>
               <li class="nav-top__item"><a href="#" onclick="return false" class="nav-top__link">СнегобоЛотоходы</a>
-                <ul class="dropdown">
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">СИВЕР</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УНЖА</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">ВЕЯ</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УХТЫШ</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">ТП С РВД</a></li>
-                  <li class="dropdown__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА2</a></li>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">СИВЕР</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УНЖА</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">ВЕЯ</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УХТЫШ</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">ТП С РВД</a></li>
+                  <li class="sub-menu__item"><a href="#" onclick="return false" class="nav-top__link">УЗОЛА2</a></li>
                 </ul>
               </li>
               <li class="nav-top__item"><a href="#" onclick="return false" class="nav-top__link">О Компании</a>
@@ -45,10 +45,10 @@
               </li>
             </ul>
           </nav><a href="tel: 8 800 550 11 51" class="header__phone">8 800 550 11 51</a>
-          <select name="lang" class="header__lang">
-            <option value="Ru">RU</option>
-            <option value="En">EN</option>
-          </select>
+          <div class="lang">
+            <div class="lang__item lang__item_ru open">RU</div>
+            <div class="lang__item lang__item_en">EN</div>
+          </div>
           <button class="m-menu js-open-menu"></button>
         </div>
       </div>
@@ -278,81 +278,109 @@
     <section class="client">
       <h2 class="client__title">Наши заказчики</h2>
       <div class="client__inner">
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client1.png" alt="Минобороны РФ" class="client__img"></div>
-          <figcaption class="client__name">Минобороны РФ</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client2.png" alt="МЧС России" class="client__img"></div>
-          <figcaption class="client__name">МЧС России</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client3.png" alt="МВД России" class="client__img"></div>
-          <figcaption class="client__name">МВД России</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client4.png" alt="Минприроды России" class="client__img"></div>
-          <figcaption class="client__name">Минприроды России</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client5.png" alt="РАО «ЕЭС России»" class="client__img"></div>
-          <figcaption class="client__name">РАО «ЕЭС России»</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client6.png" alt="Роскосмос" class="client__img"></div>
-          <figcaption class="client__name">Роскосмос</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client7.png" alt="Госкорпорация по ОрВД" class="client__img"></div>
-          <figcaption class="client__name">Госкорпорация по ОрВД</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client8.png" alt="Газпром" class="client__img"></div>
-          <figcaption class="client__name">Газпром</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client9.png" alt="Транснефть" class="client__img"></div>
-          <figcaption class="client__name">Транснефть</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client10.png" alt="«Концерн Калашников»" class="client__img"></div>
-          <figcaption class="client__name">«Концерн Калашников»</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client11.png" alt="ФСК ЕЭС" class="client__img"></div>
-          <figcaption class="client__name">ФСК ЕЭС</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client12.png" alt="Роснефть" class="client__img"></div>
-          <figcaption class="client__name">Роснефть</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client13.png" alt="Уралэлектромедь" class="client__img"></div>
-          <figcaption class="client__name">Уралэлектромедь</figcaption>
-        </figure>
-        <figure class="client__item">
-          <div class="client__pic"><img src="img/client/client14.png" alt="Группа Илим" class="client__img"></div>
-          <figcaption class="client__name">Группа Илим</figcaption>
-        </figure>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client1.png" alt="Минобороны РФ" class="client__img"></div>
+            <figcaption class="client__name">Минобороны РФ</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client2.png" alt="МЧС России" class="client__img"></div>
+            <figcaption class="client__name">МЧС России</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client3.png" alt="МВД России" class="client__img"></div>
+            <figcaption class="client__name">МВД России</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client4.png" alt="Минприроды России" class="client__img"></div>
+            <figcaption class="client__name">Минприроды России</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client5.png" alt="РАО «ЕЭС России»" class="client__img"></div>
+            <figcaption class="client__name">РАО «ЕЭС России»</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client6.png" alt="Роскосмос" class="client__img"></div>
+            <figcaption class="client__name">Роскосмос</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client7.png" alt="Госкорпорация по ОрВД" class="client__img"></div>
+            <figcaption class="client__name">Госкорпорация по ОрВД</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client8.png" alt="Газпром" class="client__img"></div>
+            <figcaption class="client__name">Газпром</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client9.png" alt="Транснефть" class="client__img"></div>
+            <figcaption class="client__name">Транснефть</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client10.png" alt="«Концерн Калашников»" class="client__img"></div>
+            <figcaption class="client__name">«Концерн Калашников»</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client11.png" alt="ФСК ЕЭС" class="client__img"></div>
+            <figcaption class="client__name">ФСК ЕЭС</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client12.png" alt="Роснефть" class="client__img"></div>
+            <figcaption class="client__name">Роснефть</figcaption>
+          </figure>
+        </div>
+        <div class="client__item">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client13.png" alt="Уралэлектромедь" class="client__img"></div>
+            <figcaption class="client__name">Уралэлектромедь</figcaption>
+          </figure>
+        </div>
+        <div class="client__item client__item_big">
+          <figure class="client__block">
+            <div class="client__pic"><img src="img/client/client14.png" alt="Группа Илим" class="client__img"></div>
+            <figcaption class="client__name">Группа Илим</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
     <div class="license">
       <h2 class="license__title">Сертификаты и лицензии</h2>
       <div class="license__slider js-license-slider">
         <div class="license__item">
-          <div class="license__pic"><img src="img/license/license1.jpg" alt="" class="license__img"></div>
+          <div class="license__pic"><a href="img/license/license1.jpg" data-fancybox="license"><img src="img/license/license1.jpg" alt="" class="license__img"></a></div>
           <p class="license__text">Благодарственное письмо от 13.11.69</p>
         </div>
         <div class="license__item">
-          <div class="license__pic"><img src="img/license/license2.jpg" alt="" class="license__img"></div>
+          <div class="license__pic"><a href="img/license/license2.jpg" data-fancybox="license"><img src="img/license/license2.jpg" alt="" class="license__img"></a></div>
           <p class="license__text">Благодарственное письмо от 13.11.69</p>
         </div>
         <div class="license__item">
-          <div class="license__pic"><img src="img/license/license3.jpg" alt="" class="license__img"></div>
+          <div class="license__pic"><a href="img/license/license3.jpg" data-fancybox="license"><img src="img/license/license3.jpg" alt="" class="license__img"></a></div>
           <p class="license__text">Благодарственное письмо от 13.11.69</p>
         </div>
         <div class="license__item">
-          <div class="license__pic"><img src="img/license/license2.jpg" alt="" class="license__img"></div>
+          <div class="license__pic"><a href="img/license/license2.jpg" data-fancybox="license"><img src="img/license/license2.jpg" alt="" class="license__img"></a></div>
           <p class="license__text">Благодарственное письмо от 13.11.69</p>
         </div>
       </div>
@@ -374,6 +402,47 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal">
+    <div class="modal__inner">
+      <form action="" id="callback" class="modal__form">
+        <div class="modal__close"><img src="img/icons/icon_close_modal.png" alt=""></div>
+        <div class="modal__title">Форма обратной связи</div>
+        <div class="modal__group">
+          <p class="modal__caption">Контактное лицо, ФИО<sup>*</sup></p>
+          <input type="text" name="name" placeholder="Михаилов Михаил Михайлович" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Контактный телефон<sup>*</sup></p>
+          <input type="tel" name="phone" placeholder="+7 (___) ___-____" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Наименование организации<sup>*</sup></p>
+          <input type="text" name="org" placeholder="" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">E-mail<sup>*</sup></p>
+          <input type="email" name="email" placeholder="asdqwe@mail.ru" class="modal__field">
+        </div>
+        <div class="modal__group">
+          <p class="modal__caption">Сообщение</p>
+          <textarea name="message" rows="5" class="modal__field"></textarea>
+        </div>
+        <div class="modal__group">
+          <label class="modal__required">
+            <input type="checkbox"><span>Я ознакомлен с<a href="">политикой конфиденциальности</a>и даю согласие на обработку персональных данных</span>
+          </label>
+          <p class="modal__required"><sup>*</sup><span>– обязательно для заполнения</span></p>
+        </div>
+        <div class="modal__control">
+          <button class="btn modal__btn">запросить предложение</button>
+        </div>
+      </form>
+      <div class="thanks">
+        <div class="thanks__close"><img src="img/icons/icon_close_modal.png" alt=""></div>
+        <div class="thanks__title">Ваш запрос успешно отправлен!</div>
+      </div>
+    </div>
   </div>
   <script type="application/javascript" src="/libs/jQuery/jquery-3.3.1.js"></script>
   <script type="application/javascript" src="/libs/jQuery-migrate/ jquery-migrate-3.0.0.js"></script>
