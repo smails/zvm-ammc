@@ -195,13 +195,13 @@ if (document.querySelectorAll('#map').length) {
 
         var placemark = new ymaps.Placemark(myMap.getCenter(), {
             // Зададим содержимое заголовка балуна.
-            balloonContentHeader: '<img src="../img/content_logo.png" height="150" width="200">' ,
+            balloonContentHeader: '<img src="../img/content_logo.png" height="80">' ,
             // Зададим содержимое основной части балуна.
             balloonContentBody: '<p class="map-title" >Офис:</p>' +
-                'Нижегородская обл., <br/>г.Заволжье, ул.Индустриальная, 13' +
-                '<a href="tel:88005501151">8(800) 550 - 11 - 51</a>(звонок бесплатный)<br/>' +
+                'Нижегородская обл., <br/>г.Заволжье, ул.Индустриальная, 13 <br/>' +
+                '<a style="padding-top: 7px" href="tel:88005501151">8(800) 550 - 11 - 51</a>(звонок бесплатный)<br/>' +
                 '<a href="tel:88314241151">8(831) 424 - 11 - 51</a><br/>' +
-                '<a href="maito:zvm1@zvm-nn.ru">zvm1@zvm-nn.ru</a><br/>',
+                '<a style="padding-top: 7px" href="maito:zvm1@zvm-nn.ru">zvm1@zvm-nn.ru</a><br/>',
             // Зададим содержимое нижней части балуна.
             // Зададим содержимое всплывающей подсказки.
             hintContent: 'Завод вездеходных машин'
