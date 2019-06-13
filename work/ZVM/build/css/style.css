@@ -6984,3 +6984,176 @@ hr
 
     color: #303030;
 }
+
+.page-error
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 100vh;
+}
+@media screen and (max-width: 1024px)
+{
+    .page-error
+    {
+        background: url(../img/404_middle.png);
+        background-position: center; 
+        -webkit-background-size: cover; 
+                background-size: cover;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .page-error
+    {
+        background: url(../img/404_small.png);
+        -webkit-background-size: cover;
+                background-size: cover;
+    }
+}
+.page-error__img
+{
+    width: 100%;
+    height: 100%; 
+
+    -o-object-fit: cover; 
+
+       object-fit: cover;
+}
+@media screen and (max-width: 1460px)
+{
+    .page-error__img
+    {
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .page-error__img
+    {
+        display: none;
+    }
+}
+.page-error__block
+{
+    position: absolute;
+    top: 30%; 
+    right: 190px;
+}
+@media screen and (max-width: 1460px)
+{
+    .page-error__block
+    {
+        right: 200px;
+    }
+}
+@media screen and (max-width: 1366px)
+{
+    .page-error__block
+    {
+        right: 150px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .page-error__block
+    {
+        right: 80px;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .page-error__block
+    {
+        top: 20%; 
+        right: 0;
+        left: 0;
+
+        width: 640px;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .page-error__block
+    {
+        top: 70px;
+
+        -webkit-box-sizing: border-box;
+
+                box-sizing: border-box;
+        width: 100%; 
+        padding: 0 30px;
+    }
+}
+.page-error__block p
+{
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: normal;
+    line-height: 40px;
+
+    width: 640px; 
+
+    letter-spacing: -.6px;
+
+    color: #fff;
+}
+@media screen and (max-width: 1460px)
+{
+    .page-error__block p
+    {
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 24px;
+
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .page-error__block p
+    {
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 40px;
+
+        width: 640px;
+
+        text-align: left; 
+
+        color: #010101;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .page-error__block p
+    {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 24px; 
+
+        width: 100%;
+    }
+}
+.page-error__btn
+{
+    width: 178px;
+    margin-top: 20px;
+    margin-right: 40px;
+
+    background: #fff;
+}
+@media screen and (max-width: 480px)
+{
+    .page-error__btn
+    {
+        display: block; 
+
+        margin: 20px auto 0;
+    }
+}
