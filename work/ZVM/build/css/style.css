@@ -2648,7 +2648,7 @@ hr
 .block__pic
 {
     width: 357px;
-    height: 266px;
+    height: 267px;
 
     -webkit-transition: .5s ease;
 
@@ -2740,6 +2740,13 @@ hr
         -ms-flex-align: center;
             align-items: center;
 }
+@media screen and (max-width: 1440px)
+{
+    .header__list
+    {
+        padding: 7px 0;
+    }
+}
 @media screen and (max-width: 1024px)
 {
     .header__list
@@ -2760,16 +2767,19 @@ hr
 
         width: 60px;
     }
-    .header__logo img
-    {
-        width: 125px;
-    }
 }
 @media screen and (max-width: 768px)
 {
     .header__logo
     {
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .header__logo img
+    {
+        width: 125px;
     }
 }
 
@@ -3365,6 +3375,13 @@ hr
 
     height: 770px;
 }
+@media screen and (max-width: 1440px)
+{
+    .slider
+    {
+        height: 660px;
+    }
+}
 @media screen and (max-width: 960px)
 {
     .slider
@@ -3402,6 +3419,13 @@ hr
     background-image: -webkit-linear-gradient(88deg, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
     background-image: -o-linear-gradient(88deg, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
     background-image: linear-gradient(2deg, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+@media screen and (max-width: 1440px)
+{
+    .slider__description
+    {
+        height: 660px;
+    }
 }
 @media screen and (max-width: 1310px)
 {
@@ -3443,6 +3467,13 @@ hr
     font-size: 2rem;
     font-weight: 400;
 }
+@media screen and (max-width: 1440px)
+{
+    .slider__title
+    {
+        padding: 37px 60px 15px 100px;
+    }
+}
 .slider__text
 {
     font-size: 16px;
@@ -3455,11 +3486,25 @@ hr
 
     color: #000;
 }
+@media screen and (max-width: 1440px)
+{
+    .slider__text
+    {
+        padding: 0 45px 30px 100px;
+    }
+}
 .slider__nav
 {
     position: absolute !important;
     right: -3px; 
     bottom: 0;
+}
+@media screen and (max-width: 1440px)
+{
+    .slider__nav
+    {
+        bottom: initial;
+    }
 }
 .slider__elem
 {
@@ -3497,11 +3542,18 @@ hr
 {
     background-image: url(../img/icons/bg_slider_nav_hover.png);
 }
+@media screen and (max-width: 1440px)
+{
+    .slider__elem
+    {
+        margin-bottom: 2px;
+    }
+}
 .slider__elem_img
 {
     display: inline-block !important;
 
-    height: 100px;
+    height: 101px;
 
     vertical-align: middle;
 }
@@ -3597,6 +3649,13 @@ hr
     background-repeat: no-repeat; 
     background-position: center;
 }
+@media screen and (max-width: 1440px)
+{
+    .slide
+    {
+        height: 660px;
+    }
+}
 @media screen and (max-width: 960px)
 {
     .slide
@@ -3669,6 +3728,13 @@ hr
     content: '';
 
     background: #00b05c;
+}
+@media screen and (max-width: 1440px)
+{
+    .slide__info
+    {
+        padding-bottom: 20px;
+    }
 }
 @media screen and (max-width: 1310px)
 {
